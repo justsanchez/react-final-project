@@ -111,3 +111,8 @@ button:hover {
   text-align: center;
 }
 
+
+/* Error Styling */
+.errorStyle{
+  color: rgb(255, 94, 94);
+}
