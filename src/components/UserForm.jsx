@@ -38,13 +38,13 @@ export default function UserForm(){
         <>
 
         {name && <h2>Reload the page to restart.</h2>}
-
+        {!name && 
         <form onSubmit={handleSubmit}>
                 <label htmlFor="name">Name: </label>
                 <input type="text" id="name" onChange={handleChange}/>
                 <button type="submit">Submit</button>
             </form>
-
+        }
         {error && <p className="errorStyle">Please enter a name to continue...</p>}
         </>
     )
